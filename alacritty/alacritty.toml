@@ -1,0 +1,44 @@
+import = ["/home/player1/.config/alacritty/mocha.toml"]
+
+[cursor]
+thickness = 0.17
+
+[cursor.style]
+blinking = "On"
+shape = "Underline"
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 8.0
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrains Mono"
+style = "BoldItalic"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "SemiBold"
+
+[font.offset]
+x = 0
+y = 0
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 0.7
+
+[window.padding]
+x = 10
+y = 10
