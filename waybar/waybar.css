@@ -27,9 +27,12 @@ button {
 }
 
 #workspaces button {
-    padding: 0 7px;
-    background-color: transparent;
+    padding: 0 12px;
+    background-color: #181825;
     color: #cdd6f4;
+    border-radius: 30px;
+    transition: all 0.1s ease-out; /* Add transition effect */
+    margin: 0 2px; /* Add margin to create space between buttons */
 }
 
 #workspaces button:hover {
@@ -40,13 +43,14 @@ button {
 #workspaces button.active {
     background-color: #181825;
     border-radius: 30px;
+    padding: 0 23px;
 }
 
 #window {
     color: #cdd6f4;
     padding: 7 40px;
     background-color: #181825;
-    border-radius: 30px;
+    border-radius: 30px; 
 }
 
 #clock {
@@ -56,12 +60,13 @@ button {
     border-radius: 30px;
 }
 
-#hyprlock {
+#custom-hyprlock {
     color: #cdd6f4;
     padding: 0 15px;
     background-color: #181825;
     border-radius: 30px;
 }
+
 
 #battery {
     padding: 0 15px;
@@ -76,12 +81,12 @@ button {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
@@ -90,7 +95,8 @@ button {
     background-color: #181825;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     background-color: #181825;
     color: #74c7ec;
 }
